@@ -1,4 +1,4 @@
-import java.io.FileWriter;   
+  
 import java.io.IOException; 
 public class userprofile{
   public static void main(String[] args){  

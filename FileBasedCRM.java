@@ -1,3 +1,4 @@
+import java.io.FileWriter; 
 import java.util.*;
 import java.io.File;
 import java.io.IOException;
@@ -15,8 +16,8 @@ public class FileBasedCRM extends editcustomerfile{
       System.out.println("Is that file properly spelt? Y/N");
       answer = user_input.nextLine();
       if (answer.equalsIgnoreCase("Y")){
-        try{ 
-          File myUser. = new File(filename);
+        try{
+          File myUser = new File(filename);
         if (myUser.createNewFile()){
           System.out.println("You created file " + filename);
           }
@@ -32,23 +33,7 @@ public class FileBasedCRM extends editcustomerfile{
           }
         }  
       }
-      try {
-    FileWriter myWriter = (filename);
-    System.out.println("State your first name.");
-    System.out.println("State your last name.");
-    System.out.println("State your email.");
-    System.out.println("State your address.");
-    System.out.println("State your city.");
-    System.out.println("State your zipcode.");
-    myWriter.write();
-    myWriter.close();
-    System.out.println("Successfully wrote to the file.");
-    } catch (IOException e) {
-      System.out.println("An error occurred.");
-      e.printStackTrace();
-    }
     }
   }
-
 
 
