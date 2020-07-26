@@ -16,8 +16,8 @@ public class FileBasedCRM extends editcustomerfile{
       answer = user_input.nextLine();
       if (answer.equalsIgnoreCase("Y")){
         try{ 
-          File myObj = new File(filename);
-        if (myObj.createNewFile()){
+          File myUser. = new File(filename);
+        if (myUser.createNewFile()){
           System.out.println("You created file " + filename);
           }
         else{
@@ -32,6 +32,21 @@ public class FileBasedCRM extends editcustomerfile{
           }
         }  
       }
+      try {
+    FileWriter myWriter = (filename);
+    System.out.println("State your first name.");
+    System.out.println("State your last name.");
+    System.out.println("State your email.");
+    System.out.println("State your address.");
+    System.out.println("State your city.");
+    System.out.println("State your zipcode.");
+    myWriter.write();
+    myWriter.close();
+    System.out.println("Successfully wrote to the file.");
+    } catch (IOException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }
     }
   }
 
